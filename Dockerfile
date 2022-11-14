@@ -1,7 +1,6 @@
 FROM python:3.9-slim-buster
 
 LABEL Name="Python Flask Demo App" Version=1.4.2 
-#version
 LABEL org.opencontainers.image.source = "https://github.com/benc-uk/python-demoapp"
 
 ARG srcDir=src
@@ -12,6 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY $srcDir/run.py .
 COPY $srcDir/app ./app
 
-EXPOSE 8080
+EXPOSE 8080:80
 
 CMD ["gunicorn", "-b", "0.0.0.0:8080", "run:app"]
