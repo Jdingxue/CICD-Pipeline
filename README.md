@@ -73,7 +73,7 @@ Public container image is [available on GitHub Container Registry](https://githu
 Run in a container with:
 
 ```bash
-docker run --rm -it -p 8080:80 ghcr.io/benc-uk/python-demoapp:latest
+docker run --rm -it -p 80:8080 ghcr.io/benc-uk/python-demoapp:latest
 ```
 
 Should you want to build your own container, use `make image` and the above variables to customise the name & tag.
