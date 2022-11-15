@@ -13,7 +13,7 @@ docker pull ghcr.io/benc-uk/python-demoapp:$VER
 \`\`\`
 
 \`\`\`
-docker run --rm -it -p 80:8080 ghcr.io/benc-uk/python-demoapp:$VER
+docker run --rm -it -p 8080 ghcr.io/benc-uk/python-demoapp:$VER
 \`\`\`
 EOM
 
