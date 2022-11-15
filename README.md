@@ -64,7 +64,7 @@ Make file variables and default values, pass these in when calling `make`, e.g. 
 | AZURE_REGION      | uksouth                |
 | AZURE_SITE_NAME   | pythonapp-{git-sha}    |
 
-The app runs under Flask and listens on port 5000 by default, this can be changed with the `PORT` environmental variable.
+The app runs under Flask and listens on port 8080 by default, this can be changed with the `PORT` environmental variable.
 
 # Containers
 
@@ -73,7 +73,7 @@ Public container image is [available on GitHub Container Registry](https://githu
 Run in a container with:
 
 ```bash
-docker run --rm -it -p 5000:5000 ghcr.io/benc-uk/python-demoapp:latest
+docker run --rm -it -p 8080:80 ghcr.io/benc-uk/python-demoapp:latest
 ```
 
 Should you want to build your own container, use `make image` and the above variables to customise the name & tag.

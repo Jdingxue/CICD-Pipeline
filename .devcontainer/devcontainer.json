@@ -1,7 +1,9 @@
 {
   "image": "ghcr.io/benc-uk/devcontainers/python:latest",
   "remoteUser": "vscode",
-  "forwardPorts": [5000],
+  "forwardPorts": [
+    8080
+  ],
   "extensions": [
     "ms-python.python",
     "mikestead.dotenv",
@@ -9,5 +11,5 @@
     "ms-azuretools.vscode-bicep",
     "cschleiden.vscode-github-actions",
     "github.vscode-pull-request-github"
-  ]  
+  ]
 }
